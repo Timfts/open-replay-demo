@@ -1,11 +1,14 @@
 import { Outlet, Link } from "react-router-dom"
 import { useEffect } from 'react';
-import OpenReplay from '@openreplay/tracker/cjs';
+import OpenReplay from '@openreplay/tracker';
+import trackerAssist from '@openreplay/tracker-assist';
+
 
 const tracker = new OpenReplay({
     projectKey: "PyR18rN6EOFXo49pSxkk"
 });
 
+tracker.use(trackerAssist());
 
 function Root() {
 
