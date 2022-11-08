@@ -2,25 +2,21 @@ import { Outlet, Link } from "react-router-dom"
 import { useEffect } from 'react';
 import tracker from "./configs/OpenReplay";
 
+tracker.start({
+    userID: "userTest", metadata: {
+        balance: "10M",
+        plan: "free"
+    }
+}).then(() => {
+    window.addEventListener("error", (err) => {
+        console.log("lala")
+        console.error(err);
+        tracker.handleError(err)
+    })
+});
 
 
 function Root() {
-
-    useEffect(() => {
-        tracker.start({
-            userID: "userTest", metadata: {
-                balance: "10M",
-                plan: "free"
-            }
-        }).then(() => {
-            window.addEventListener("error", (err) => {
-                console.log("lala")
-                console.error(err);
-                tracker.handleError(err)
-            })
-        });
-
-    }, []);
 
     return (<div>
         <nav>
