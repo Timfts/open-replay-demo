@@ -13,6 +13,11 @@ function Root() {
                 plan: "free"
             }
         });
+
+        window.addEventListener("error", (err) => {
+            console.log("lala")
+            tracker.handleError(err)
+        })
     }, []);
 
     return (<div>
