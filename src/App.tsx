@@ -12,12 +12,13 @@ function Root() {
                 balance: "10M",
                 plan: "free"
             }
+        }).then(() => {
+            window.addEventListener("error", (err) => {
+                console.log("lala")
+                tracker.handleError(err)
+            })
         });
 
-        window.addEventListener("error", (err) => {
-            console.log("lala")
-            tracker.handleError(err)
-        })
     }, []);
 
     return (<div>
