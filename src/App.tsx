@@ -10,7 +10,7 @@ tracker.start({
 }).then(() => {
     window.addEventListener("error", (err) => {
         console.log("lala")
-        console.error(err);
+        console.error(err.error);
         tracker.handleError(err)
     })
 });
