@@ -6,7 +6,7 @@ import PageB from "./pages/PageB";
 
 export default createBrowserRouter([
     {
-        path: "/open-replay-demo/",
+        path: "/",
         element: <Root />,
         children: [
             {
