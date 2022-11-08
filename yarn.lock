@@ -311,6 +311,11 @@
   resolved "https://registry.yarnpkg.com/@openreplay/tracker-axios/-/tracker-axios-3.6.1.tgz#e690473ca20bbe8be4726fee18605d495fbb10df"
   integrity sha512-YZOZ37iAN+OC8hkj4Ur668uBPXPKLUznDHiVKfBYo3tLKWea6d0BelYELCQWCInw9nSBabwk7/EX4iwduQS7cQ==
 
+"@openreplay/tracker-fetch@^3.6.1":
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/@openreplay/tracker-fetch/-/tracker-fetch-3.6.1.tgz#46388496d883281e73637f1625829a4c94fbd003"
+  integrity sha512-l+SUogc+hhUgEbpi65leskesWBjZWHKNSkoGQ9ix43HaPsUmT6nrw6+xkFNPRo1ZkqFbG2Hd+Otqs31TU+g19Q==
+
 "@openreplay/tracker@^4.1.5":
   version "4.1.5"
   resolved "https://registry.yarnpkg.com/@openreplay/tracker/-/tracker-4.1.5.tgz#e6c1e400d55d0d564c2bad9c2e7e559443e3bb9e"
