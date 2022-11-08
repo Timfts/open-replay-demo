@@ -5,7 +5,7 @@ import trackerAssist from '@openreplay/tracker-assist';
 
 
 const tracker = new OpenReplay({
-    projectKey: "PyR18rN6EOFXo49pSxkk"
+    projectKey: "PyR18rN6EOFXo49pSxkk",
 });
 
 tracker.use(trackerAssist());
@@ -13,7 +13,12 @@ tracker.use(trackerAssist());
 function Root() {
 
     useEffect(() => {
-        tracker.start();
+        tracker.start({
+            userID: "userTest", metadata: {
+                balance: "10M",
+                plan: "free"
+            }
+        });
     }, []);
 
     return (<div>
